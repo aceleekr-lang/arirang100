@@ -91,11 +91,17 @@ h1{
 }
 .intro .wrap{position:relative;z-index:2}
 blockquote{
-  margin:0;font-family:var(--serif);font-weight:500;
-  font-size:clamp(21px,3.2vw,29px);line-height:1.62;
+  margin:0;text-align:center;
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(28px,5vw,46px);line-height:1.3;letter-spacing:-.015em;
 }
-blockquote em{font-style:normal;display:block;color:var(--brass)}
-.intro p{margin:32px 0 0;color:var(--muted);font-size:17px}
+blockquote em{
+  font-style:normal;display:block;margin-top:24px;color:var(--brass);
+  font-weight:500;font-size:clamp(15px,2.3vw,19px);
+  line-height:1.75;letter-spacing:.01em;
+}
+.intro .col{margin:0 auto}
+.intro p{margin:48px 0 0;color:var(--muted);font-size:17px}
 
 /* ── 섹션 공통 ─────────────────────────────── */
 section{padding:110px 0;border-top:1px solid var(--line)}
@@ -235,8 +241,8 @@ a:focus-visible,.choice:focus-visible{outline:2px solid var(--brass);outline-off
   <div class="intro-bg" aria-hidden="true"></div>
   <div class="wrap"><div class="col">
     <blockquote>
-      두 개의 아리랑 하나의 1926년
-      <em>필름에 남은 이야기와 SP 원반에 남은 목소리</em>
+      두 개의 아리랑<br>하나의 1926년
+      <em>필름에 남은 이야기와<br>SP 원반에 남은 목소리</em>
     </blockquote>
     <p>1926년 극장에서는 나운규의 영화 〈아리랑〉이 상영되었고, 축음기에서는 김금화가 부른 〈밀양아리랑〉 SP 원반이 돌아갔습니다. 서로 다른 매체에 남은 두 기록이 100년 뒤 다시 우리를 만납니다.</p>
     </div>
