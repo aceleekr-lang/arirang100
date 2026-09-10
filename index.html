@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>영화와 SP 원반으로 만나는 아리랑 100년</title>
+<meta name="description" content="1926년 나운규의 영화 아리랑과 김금화의 밀양아리랑 SP 음반. 서로 다른 매체에 남은 두 기록이 100년 뒤 다시 만납니다.">
+<meta property="og:title" content="영화와 SP 원반으로 만나는 아리랑 100년">
+<meta property="og:description" content="1926년, 극장에서는 영화가 상영되었고 축음기에서는 원반이 돌았습니다.">
+<!-- ↓ 배포 주소가 arirang100.vercel.app 이 아니면 아래 두 줄의 주소를 바꾸세요 -->
+<meta property="og:image" content="https://arirang100.vercel.app/img/og01-share.jpg">
+<meta property="og:url" content="https://arirang100.vercel.app/">
+<meta property="og:type" content="website">
+<link rel="icon" sizes="16x16" href="img/fav-02-favicon-16.svg">
+<link rel="icon" sizes="any" href="img/fav-01-symbol.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14100c;
+  --ink-deep:#0b0806;
+  --paper:#e8dcc4;
+  --muted:#9a8b72;
+  --brass:#c9a961;
+  --line:rgba(232,220,196,.18);
+  --serif:'Noto Serif KR',serif;
+  --sans:'Noto Sans KR',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ink);color:var(--paper);
+  font-family:var(--sans);font-weight:300;line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+
+body::before,body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60}
+body::before{
+  background:url('img/tex-01-film-grain.svg') repeat;background-size:220px;
+  opacity:.09;mix-blend-mode:overlay;
+}
+body::after{
+  background:url('img/ovl-scratches.svg') no-repeat;background-size:100% 100%;
+  opacity:.24;
+}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+.col{max-width:640px}
+
+/* ── 히어로 ───────────────────────────────── */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;
+  overflow:hidden;background:var(--ink-deep);
+}
+.hero-photo{
+  position:absolute;inset:0;
+  background:url('img/h01-hero-desktop.jpg') center/cover no-repeat;
+  opacity:.5;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(90deg,var(--ink-deep) 6%,rgba(11,8,6,.78) 46%,rgba(11,8,6,.25));
+}
+.hero-text{position:relative;z-index:2}
+.year-line{
+  display:flex;gap:18px;align-items:center;
+  font-family:var(--serif);font-size:15px;letter-spacing:.22em;color:var(--brass);
+  margin:0;
+}
+.year-line span:nth-child(2){flex:0 0 56px;height:1px;background:var(--brass);opacity:.6}
+h1{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(34px,6.4vw,62px);line-height:1.24;
+  margin:26px 0 22px;letter-spacing:-.01em;
+}
+.hero-sub{font-size:clamp(15px,2.2vw,18px);color:var(--muted);margin:0}
+.scroll-cue{
+  position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:2;
+  font-size:12px;letter-spacing:.3em;color:var(--muted);
+}
+
+/* ── 인트로 ───────────────────────────────── */
+.intro{position:relative;padding:130px 0 110px;overflow:hidden}
+.intro-bg{
+  position:absolute;inset:0;
+  background:url('img/h02-scroll-overlay.jpg') center/cover no-repeat;
+  opacity:.3;
+}
+.intro .wrap{position:relative;z-index:2}
+blockquote{
+  margin:0;font-family:var(--serif);font-weight:500;
+  font-size:clamp(21px,3.2vw,29px);line-height:1.62;
+}
+blockquote em{font-style:normal;display:block;color:var(--brass)}
+.intro p{margin:32px 0 0;color:var(--muted);font-size:17px}
+
+/* ── 섹션 공통 ─────────────────────────────── */
+section{padding:110px 0;border-top:1px solid var(--line)}
+.eyebrow{
+  font-family:var(--serif);font-size:13px;letter-spacing:.3em;
+  color:var(--brass);margin:0 0 20px;
+}
+h2{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(26px,4.4vw,40px);line-height:1.34;margin:0 0 34px;
+}
+h3{font-family:var(--serif);font-weight:500;font-size:21px;margin:0 0 18px}
+p{margin:0 0 20px;font-size:17px;color:rgba(232,220,196,.86)}
+
+/* 인용 — 배경 사진 위 */
+.pull{
+  position:relative;margin:76px 0;padding:88px 34px;overflow:hidden;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.pull-bg{position:absolute;inset:0;background:center/cover no-repeat;opacity:.42}
+.pull .q{
+  position:relative;z-index:2;max-width:620px;margin:0 auto;text-align:center;
+  font-family:var(--serif);font-size:clamp(19px,2.7vw,26px);line-height:1.6;
+}
+.pull .q em{font-style:normal;display:block;color:var(--brass)}
+
+/* 이미지 */
+figure{margin:60px 0}
+figure.wide img{width:100%;border:1px solid var(--line)}
+figure.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:end}
+figure.duo img{border:1px solid var(--line)}
+.doc img{border:1px solid var(--line);background:#d8cbb0}
+.portrait img{max-width:320px;border:1px solid var(--line)}
+figcaption{margin-top:14px;font-size:13px;color:var(--muted)}
+
+/* 사실 목록 */
+dl.facts{
+  margin:52px 0 0;display:grid;grid-template-columns:120px 1fr;
+  border-top:1px solid var(--line);
+}
+dl.facts dt,dl.facts dd{margin:0;padding:16px 0;border-bottom:1px solid var(--line)}
+dl.facts dt{font-size:14px;color:var(--muted);letter-spacing:.06em}
+dl.facts dd{font-size:16px}
+
+.diagram{margin:70px 0}
+.diagram img{width:100%}
+
+/* ── 비교 ─────────────────────────────────── */
+.compare{width:100%;border-collapse:collapse;margin:52px 0 0}
+.compare th,.compare td{
+  text-align:left;padding:20px 16px;border-bottom:1px solid var(--line);
+  font-weight:400;font-size:16px;vertical-align:middle;
+}
+.compare thead th{
+  font-family:var(--serif);font-weight:500;font-size:15px;color:var(--brass);
+  border-bottom:1px solid rgba(201,169,97,.4);
+}
+.compare tbody th{width:170px;color:var(--muted);font-size:14px}
+.compare tbody th .ic{
+  width:22px;height:22px;display:inline-block;vertical-align:-5px;
+  margin-right:11px;background:var(--brass);
+  -webkit-mask:var(--m) center/contain no-repeat;
+  mask:var(--m) center/contain no-repeat;
+}
+
+/* ── 엔딩 ─────────────────────────────────── */
+.ending{background:var(--ink-deep)}
+.beam{
+  height:clamp(160px,26vw,300px);margin:0 0 64px;
+  background:url('img/c03-1926-2026.jpg') center/cover no-repeat;
+  border:1px solid var(--line);
+}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:56px 0 0}
+.choice{
+  display:block;text-decoration:none;color:var(--paper);
+  border:1px solid var(--line);padding:44px 28px;min-height:210px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  background:var(--ink) center/cover no-repeat;
+  transition:border-color .3s ease;
+}
+.choice:hover,.choice:focus-visible{border-color:var(--brass)}
+.choice .k{
+  font-family:var(--serif);font-size:13px;letter-spacing:.24em;
+  color:var(--brass);margin-bottom:12px;
+}
+.choice strong{font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.5}
+.choice[data-img="film"]{background-image:linear-gradient(rgba(11,8,6,.35),rgba(11,8,6,.8)),url('img/d01-cta-film.jpg')}
+.choice[data-img="record"]{background-image:linear-gradient(rgba(11,8,6,.35),rgba(11,8,6,.8)),url('img/d02-cta-record.jpg')}
+
+footer{
+  padding:64px 0 96px;text-align:center;color:var(--muted);
+  font-size:13px;border-top:1px solid var(--line);
+}
+a:focus-visible,.choice:focus-visible{outline:2px solid var(--brass);outline-offset:4px}
+
+@media(max-width:760px){
+  section{padding:80px 0}
+  .intro{padding:88px 0 76px}
+  .hero-photo{background-image:url('img/h01b-hero-mobile.jpg')}
+  .hero::after{background:linear-gradient(180deg,rgba(11,8,6,.45),rgba(11,8,6,.9) 62%)}
+  .pull{padding:60px 20px;margin:56px 0}
+  figure.duo{grid-template-columns:1fr}
+  .choices{grid-template-columns:1fr}
+  dl.facts{grid-template-columns:96px 1fr}
+  .compare thead{display:none}
+  .compare tr{display:block;padding:16px 0;border-bottom:1px solid var(--line)}
+  .compare th,.compare td{border-bottom:none}
+  .compare tbody th{width:auto;display:block;padding:0 0 6px}
+  .compare td{display:block;padding:4px 0 4px 33px}
+  .compare td:first-of-type::before{content:"영화 아리랑 — ";color:var(--muted)}
+  .compare td:last-of-type::before{content:"SP 원반 — ";color:var(--muted)}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-photo" aria-hidden="true"></div>
+  <div class="wrap hero-text">
+    <div class="col">
+      <p class="year-line"><span>1926</span><span></span><span>2026</span></p>
+      <h1>영화와 SP 원반으로<br>만나는 아리랑 100년</h1>
+      <p class="hero-sub">나운규의 영화 〈아리랑〉과 김금화의 〈밀양아리랑〉</p>
+    </div>
+  </div>
+  <p class="scroll-cue" aria-hidden="true">SCROLL</p>
+</header>
+
+<div class="intro">
+  <div class="intro-bg" aria-hidden="true"></div>
+  <div class="wrap"><div class="col">
+    <blockquote>
+      두 개의 아리랑 하나의 1926년
+      <em>필름에 남은 이야기와 SP 원반에 남은 목소리</em>
+    </blockquote>
+    <p>1926년 극장에서는 나운규의 영화 〈아리랑〉이 상영되었고, 축음기에서는 김금화가 부른 〈밀양아리랑〉 SP 원반이 돌아갔습니다. 서로 다른 매체에 남은 두 기록이 100년 뒤 다시 우리를 만납니다.</p>
+  </div></div>
+</div>
+
+<section id="film">
+  <div class="wrap">
+    <div class="col">
+      <p class="eyebrow">FIRST RECORD</p>
+      <h2>스크린 위에서 깨어난 아리랑</h2>
+      <p>1926년 10월 1일 서울 단성사에서 나운규의 무성영화 〈아리랑〉이 처음 관객을 만났습니다.</p>
+    </div>
+
+    <figure class="wide">
+      <img src="img/a01-dansungsa-night.jpg" alt="1926년 무렵 밤의 극장 앞에 사람들이 모여 있는 장면" loading="lazy">
+      <figcaption>당시 극장가의 분위기를 재현한 이미지</figcaption>
+    </figure>
+
+    <div class="col">
+      <p>나운규는 원작과 각색을 맡고 주연으로 출연했습니다. 영화는 일제강점기를 살아가던 사람들의 아픔과 저항의 정서를 담았고, 개봉 뒤 큰 반향을 일으켰습니다.</p>
+      <p>〈아리랑〉은 소리가 없는 무성영화였습니다. 그럼에도 영화와 아리랑이라는 노래는 오랫동안 함께 기억되어 왔습니다.</p>
+    </div>
+
+    <figure class="wide">
+      <img src="img/a02-cinema-interior.jpg" alt="무성영화 상영 중인 극장 객석과 영사 빛줄기" loading="lazy">
+      <figcaption>무성영화 상영 장면을 재현한 이미지</figcaption>
+    </figure>
+  </div>
+
+  <div class="pull">
+    <div class="pull-bg" style="background-image:url('img/a07-quote-film.jpg')" aria-hidden="true"></div>
+    <p class="q">영화는 소리가 없었지만<em>관객의 마음에서는 아리랑이 울렸습니다</em></p>
+  </div>
+
+  <div class="wrap">
+    <figure class="duo">
+      <div>
+        <img src="img/a03-projector-reel.jpg" alt="회전하는 릴이 달린 옛 영사기" loading="lazy">
+      </div>
+      <div class="portrait">
+        <img src="img/a06-nawoongyu.jpg" alt="나운규 사진" loading="lazy">
+        <figcaption>나운규 &middot; 소장처 표기 예정</figcaption>
+      </div>
+    </figure>
+
+    <div class="col">
+      <h3>사라진 필름과 남아 있는 기록</h3>
+      <p>영화의 원본 필름은 현재 온전히 전해지지 않습니다. 대신 당시 신문에 실린 개봉 광고와 사진, 나운규와 동료 영화인들이 남긴 글이 그날의 반응을 증언합니다.</p>
+    </div>
+
+    <figure class="wide">
+      <img src="img/a04-lost-film.jpg" alt="빈 릴과 끊어진 필름 조각이 놓인 탁자" loading="lazy">
+    </figure>
+
+    <figure class="doc">
+      <img src="img/a05-newspaper-ad.jpg" alt="1926년 영화 아리랑 개봉 신문 광고" loading="lazy">
+      <figcaption>개봉 당시 신문 광고 &middot; 소장처 표기 예정</figcaption>
+    </figure>
+
+    <div class="col">
+      <p>그래서 영화 〈아리랑〉의 100주년은 한 편의 영화를 기념하는 데서 끝나지 않습니다. 사라진 화면을 기록으로 다시 만나고, 그 시대 사람들이 느낀 감정을 오늘의 언어로 이어가는 시간이 됩니다.</p>
+
+      <dl class="facts">
+        <dt>작품</dt><dd>나운규의 무성영화 〈아리랑〉</dd>
+        <dt>개봉</dt><dd>1926년 10월 1일 서울 단성사</dd>
+        <dt>나운규</dt><dd>원작 &middot; 각색 &middot; 주연</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="record">
+  <div class="wrap">
+    <div class="col">
+      <p class="eyebrow">SECOND RECORD</p>
+      <h2>SP 원반에 새겨진 밀양의 목소리</h2>
+      <p>같은 1926년, 김금화가 부르고 박춘재가 장고 반주한 〈밀양아리랑〉이 SP 음반으로 발매되었습니다.</p>
+    </div>
+
+    <figure class="duo">
+      <div><img src="img/b02-gramophone.jpg" alt="나팔형 축음기" loading="lazy"></div>
+      <div><img src="img/b01-groove-stylus.jpg" alt="원반의 홈에 내려앉는 축음기 바늘" loading="lazy"></div>
+    </figure>
+
+    <div class="col">
+      <p>노래는 부르는 순간 공기 속으로 사라집니다. 그러나 SP 원반은 목소리와 장단을 표면의 홈에 새겼습니다. 축음기의 바늘이 그 홈을 따라 움직이면 백 년 전의 노래가 다시 현재의 소리가 됩니다.</p>
+    </div>
+  </div>
+
+  <div class="pull">
+    <div class="pull-bg" style="background-image:url('img/b07-quote-record.jpg')" aria-hidden="true"></div>
+    <p class="q">바늘이 원반에 닿는 순간<em>1926년의 밀양아리랑이 다시 깨어납니다</em></p>
+  </div>
+
+  <div class="wrap">
+    <div class="col">
+      <h3>SP 음반은 무엇일까요</h3>
+      <p>SP는 Standard Playing Record의 줄임말로, 축음기로 재생하던 원반입니다. 보통 분당 78회 안팎으로 빠르게 회전하며, 당시 사람들의 목소리와 연주를 오늘까지 전해 준 소리 기록입니다.</p>
+    </div>
+
+    <figure class="diagram">
+      <img src="img/b05-78rpm-diagram.svg" alt="SP 원반의 회전수, 규격, 재질, 홈 단면을 설명한 다이어그램" loading="lazy">
+    </figure>
+
+    <div class="col">
+      <dl class="facts">
+        <dt>곡명</dt><dd>〈밀양아리랑〉</dd>
+        <dt>가창</dt><dd>김금화</dd>
+        <dt>장고</dt><dd>박춘재</dd>
+        <dt>발매</dt><dd>1926년</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="two-paths">
+  <div class="wrap">
+    <div class="col">
+      <p class="eyebrow">TWO PATHS</p>
+      <h2>같은 해 서로 다른 두 기록</h2>
+      <p>영화 속 아리랑과 김금화가 부른 밀양아리랑은 서로 다른 작품입니다. 하지만 두 기록은 같은 시대에 새로운 매체를 통해 사람들에게 전해졌다는 공통점을 가집니다.</p>
+    </div>
+
+    <figure class="wide">
+      <img src="img/c01-split-compare.jpg" alt="나란히 놓인 필름 릴과 SP 원반" loading="lazy">
+    </figure>
+
+    <table class="compare">
+      <thead>
+        <tr><th scope="col">구분</th><th scope="col">영화 아리랑</th><th scope="col">밀양아리랑 SP 원반</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row"><span class="ic" style="--m:url('img/c02-icon-media.svg')"></span>매체</th><td>필름</td><td>SP 원반</td></tr>
+        <tr><th scope="row"><span class="ic" style="--m:url('img/c02-icon-expression.svg')"></span>표현</th><td>빛과 그림자</td><td>목소리와 장단</td></tr>
+        <tr><th scope="row"><span class="ic" style="--m:url('img/c02-icon-person.svg')"></span>인물</th><td>나운규</td><td>김금화와 박춘재</td></tr>
+        <tr><th scope="row"><span class="ic" style="--m:url('img/c02-icon-firstmeet.svg')"></span>첫 만남</th><td>극장</td><td>축음기</td></tr>
+        <tr><th scope="row"><span class="ic" style="--m:url('img/c02-icon-centennial.svg')"></span>100주년</th><td>개봉 100주년</td><td>음반 발매 100주년</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="ending">
+  <div class="wrap">
+    <div class="beam" aria-hidden="true"></div>
+    <div class="col">
+      <h2>1926년에서 2026년으로</h2>
+      <p>100년 전에는 영사기가 필름을 돌리고 축음기가 SP 원반을 돌렸습니다. 필름은 이야기를 보여주었고, SP 원반은 노래를 들려주었습니다. 서로 다른 두 길을 따라온 아리랑은 2026년의 한 화면에서 다시 만납니다.</p>
+      <p>두 개의 기록을 따라가 보세요. 아리랑의 100년은 아직 끝나지 않았습니다.</p>
+    </div>
+
+    <div class="choices">
+      <a class="choice" data-img="film" href="#film">
+        <span class="k">FIRST RECORD</span>
+        <strong>영화의 기록을 볼까요</strong>
+      </a>
+      <a class="choice" data-img="record" href="#record">
+        <span class="k">SECOND RECORD</span>
+        <strong>밀양아리랑의 소리를 들어볼까요</strong>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">영화와 SP 원반으로 만나는 아리랑 100년</div>
+</footer>
+
+</body>
+</html>

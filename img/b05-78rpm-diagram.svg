@@ -1,0 +1,59 @@
+<svg style="color:#e8dcc4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" width="720" height="540" fill="none" stroke="currentColor" role="img" aria-label="SP 원반 78회전 설명 다이어그램">
+  <defs><clipPath id="loupe"><circle cx="185" cy="448" r="62"/></clipPath></defs>
+  <g font-family="'Noto Sans KR','Apple SD Gothic Neo',sans-serif" fill="currentColor" stroke="none">
+    <text x="48" y="48" font-size="21" font-weight="600">SP 원반은 어떻게 소리를 담았나</text>
+    <text x="48" y="72" font-size="12" fill-opacity=".55" letter-spacing="0.5">Standard Playing Record</text>
+    <text x="185" y="100" font-size="18" font-weight="600" text-anchor="middle" letter-spacing="1">78 rpm</text>
+    <text x="268" y="440" font-size="12" fill-opacity=".55" letter-spacing="1">홈 단면 확대</text>
+    <text x="268" y="464" font-size="14">소리의 진동이</text>
+    <text x="268" y="484" font-size="14">홈의 좌우 굴곡으로</text>
+    <text x="268" y="504" font-size="14">새겨진다</text>
+    <path d="M400 113h280" stroke="currentColor" stroke-opacity=".25" stroke-width="1"/>
+    <text x="400" y="140" font-size="12" letter-spacing="1" fill-opacity=".55">회전수</text>
+    <text x="400" y="166" font-size="16">분당 78회전 · 한 바퀴에 약 0.77초</text>
+    <path d="M400 191h280" stroke="currentColor" stroke-opacity=".25" stroke-width="1"/>
+    <text x="400" y="218" font-size="12" letter-spacing="1" fill-opacity=".55">규격</text>
+    <text x="400" y="244" font-size="16">보통 지름 10인치, 약 25센티미터</text>
+    <path d="M400 269h280" stroke="currentColor" stroke-opacity=".25" stroke-width="1"/>
+    <text x="400" y="296" font-size="12" letter-spacing="1" fill-opacity=".55">재생 시간</text>
+    <text x="400" y="322" font-size="16">한 면 약 3분 안팎</text>
+    <path d="M400 347h280" stroke="currentColor" stroke-opacity=".25" stroke-width="1"/>
+    <text x="400" y="374" font-size="12" letter-spacing="1" fill-opacity=".55">재질</text>
+    <text x="400" y="400" font-size="16">셸락 — 유리처럼 잘 깨짐</text>
+    <path d="M400 425h280" stroke="currentColor" stroke-opacity=".25" stroke-width="1"/>
+    <text x="400" y="452" font-size="12" letter-spacing="1" fill-opacity=".55">재생 방식</text>
+    <text x="400" y="478" font-size="16">축음기 바늘이 홈을 따라 움직임</text>
+  </g>
+  <g stroke-width="1.4" stroke-linecap="round">
+    <path d="M59.1 204.2 A134 134 0 0 1 310.9 204.2" stroke-opacity=".5"/>
+    <path d="M314.7 214.5 L303.9 202.5 L315.2 198.4 Z" fill="currentColor" stroke="none" fill-opacity=".5"/>
+    <circle cx="185" cy="250" r="118" stroke-width="1.8"/>
+    <g stroke-opacity=".3" stroke-width="1">
+      <circle cx="185" cy="250" r="112"/>
+      <circle cx="185" cy="250" r="105"/>
+      <circle cx="185" cy="250" r="98"/>
+      <circle cx="185" cy="250" r="91"/>
+      <circle cx="185" cy="250" r="84"/>
+      <circle cx="185" cy="250" r="77"/>
+      <circle cx="185" cy="250" r="70"/>
+      <circle cx="185" cy="250" r="63"/>
+    </g>
+    <circle cx="185" cy="250" r="50" stroke-width="1.4"/>
+    <circle cx="185" cy="250" r="50" fill="currentColor" fill-opacity=".07" stroke="none"/>
+    <circle cx="185" cy="250" r="6" stroke-width="1.4"/>
+    <path d="M340 100 L251.5 164.9" stroke-width="2"/>
+    <rect x="330" y="90" width="26" height="12" rx="6" stroke-width="1.4" fill="currentColor" fill-opacity=".12"/>
+    <circle cx="251.5" cy="164.9" r="3" fill="currentColor" stroke="none"/>
+    <path d="M172 372 L131 400 M198 372 L239 400" stroke-opacity=".3" stroke-width="1"/>
+    <g clip-path="url(#loupe)" stroke-opacity=".45" stroke-width="1.2">
+      <path d="M129 403 Q134 407 139 403 Q144 399 149 403 Q154 407 159 403 Q164 399 169 403 Q174 407 179 403 Q184 399 189 403 Q194 407 199 403 Q204 399 209 403 Q214 407 219 403 Q224 399 229 403 Q234 407 239 403 Q244 399 249 403"/>
+      <path d="M129 418 Q134 422 139 418 Q144 414 149 418 Q154 422 159 418 Q164 414 169 418 Q174 422 179 418 Q184 414 189 418 Q194 422 199 418 Q204 414 209 418 Q214 422 219 418 Q224 414 229 418 Q234 422 239 418 Q244 414 249 418"/>
+      <path d="M129 433 Q134 437 139 433 Q144 429 149 433 Q154 437 159 433 Q164 429 169 433 Q174 437 179 433 Q184 429 189 433 Q194 437 199 433 Q204 429 209 433 Q214 437 219 433 Q224 429 229 433 Q234 437 239 433 Q244 429 249 433"/>
+      <path d="M129 448 Q134 452 139 448 Q144 444 149 448 Q154 452 159 448 Q164 444 169 448 Q174 452 179 448 Q184 444 189 448 Q194 452 199 448 Q204 444 209 448 Q214 452 219 448 Q224 444 229 448 Q234 452 239 448 Q244 444 249 448"/>
+      <path d="M129 463 Q134 467 139 463 Q144 459 149 463 Q154 467 159 463 Q164 459 169 463 Q174 467 179 463 Q184 459 189 463 Q194 467 199 463 Q204 459 209 463 Q214 467 219 463 Q224 459 229 463 Q234 467 239 463 Q244 459 249 463"/>
+      <path d="M129 478 Q134 482 139 478 Q144 474 149 478 Q154 482 159 478 Q164 474 169 478 Q174 482 179 478 Q184 474 189 478 Q194 482 199 478 Q204 474 209 478 Q214 482 219 478 Q224 474 229 478 Q234 482 239 478 Q244 474 249 478"/>
+      <path d="M129 493 Q134 497 139 493 Q144 489 149 493 Q154 497 159 493 Q164 489 169 493 Q174 497 179 493 Q184 489 189 493 Q194 497 199 493 Q204 489 209 493 Q214 497 219 493 Q224 489 229 493 Q234 497 239 493 Q244 489 249 493"/>
+    </g>
+    <circle cx="185" cy="448" r="62" stroke-width="1.6"/>
+  </g>
+</svg>

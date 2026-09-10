@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="첫 만남">
+  <circle cx="24" cy="24" r="5"/>
+  <path d="M4 24h11"/>
+  <path d="M10.5 19.5 15 24l-4.5 4.5"/>
+  <path d="M44 24H33"/>
+  <path d="M37.5 19.5 33 24l4.5 4.5"/>
+  <path d="M24 5v6M24 37v6"/>
+</svg>

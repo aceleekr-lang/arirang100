@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <filter id="fiber" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="5" stitchTiles="stitch" seed="3"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0.79  0 0 0 0 0.71  0 0 0 0 0.55  0.9 0.4 0 0 0.05"/>
+  </filter>
+  <filter id="tooth" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="3" stitchTiles="stitch" seed="9"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.28"/></feComponentTransfer>
+  </filter>
+  <rect width="512" height="512" fill="#cbbd9c"/>
+  <rect width="512" height="512" filter="url(#fiber)"/>
+  <rect width="512" height="512" filter="url(#tooth)" opacity="0.7"/>
+</svg>

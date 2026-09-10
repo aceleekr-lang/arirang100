@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="body" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#241d16"/>
+      <stop offset="70%" stop-color="#16110c"/>
+      <stop offset="100%" stop-color="#0d0a07"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="18%" y1="4%" x2="82%" y2="96%">
+      <stop offset="0%" stop-color="#e8dcc4" stop-opacity="0.20"/>
+      <stop offset="38%" stop-color="#e8dcc4" stop-opacity="0.02"/>
+      <stop offset="62%" stop-color="#e8dcc4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#e8dcc4" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="disc"><circle cx="400" cy="400" r="392"/></clipPath>
+    <filter id="dust"><feTurbulence type="fractalNoise" baseFrequency="1.3" numOctaves="2" seed="21"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer></filter>
+  </defs>
+  <circle cx="400" cy="400" r="392" fill="url(#body)"/>
+  <g fill="none" stroke="#e8dcc4" stroke-opacity="0.16" stroke-width="1.2">
+    <circle cx="400" cy="400" r="120"/>
+    <circle cx="400" cy="400" r="124"/>
+    <circle cx="400" cy="400" r="128"/>
+    <circle cx="400" cy="400" r="132"/>
+    <circle cx="400" cy="400" r="136"/>
+    <circle cx="400" cy="400" r="140"/>
+    <circle cx="400" cy="400" r="144"/>
+    <circle cx="400" cy="400" r="148"/>
+    <circle cx="400" cy="400" r="152"/>
+    <circle cx="400" cy="400" r="156"/>
+    <circle cx="400" cy="400" r="160"/>
+    <circle cx="400" cy="400" r="164"/>
+    <circle cx="400" cy="400" r="168"/>
+    <circle cx="400" cy="400" r="172"/>
+    <circle cx="400" cy="400" r="176"/>
+    <circle cx="400" cy="400" r="180"/>
+    <circle cx="400" cy="400" r="184"/>
+    <circle cx="400" cy="400" r="188"/>
+    <circle cx="400" cy="400" r="192"/>
+    <circle cx="400" cy="400" r="196"/>
+    <circle cx="400" cy="400" r="200"/>
+    <circle cx="400" cy="400" r="204"/>
+    <circle cx="400" cy="400" r="208"/>
+    <circle cx="400" cy="400" r="212"/>
+    <circle cx="400" cy="400" r="216"/>
+    <circle cx="400" cy="400" r="220"/>
+    <circle cx="400" cy="400" r="224"/>
+    <circle cx="400" cy="400" r="228"/>
+    <circle cx="400" cy="400" r="232"/>
+    <circle cx="400" cy="400" r="236"/>
+    <circle cx="400" cy="400" r="240"/>
+    <circle cx="400" cy="400" r="244"/>
+    <circle cx="400" cy="400" r="248"/>
+    <circle cx="400" cy="400" r="252"/>
+    <circle cx="400" cy="400" r="256"/>
+    <circle cx="400" cy="400" r="260"/>
+    <circle cx="400" cy="400" r="264"/>
+    <circle cx="400" cy="400" r="268"/>
+    <circle cx="400" cy="400" r="272"/>
+    <circle cx="400" cy="400" r="276"/>
+    <circle cx="400" cy="400" r="280"/>
+    <circle cx="400" cy="400" r="284"/>
+    <circle cx="400" cy="400" r="288"/>
+    <circle cx="400" cy="400" r="292"/>
+    <circle cx="400" cy="400" r="296"/>
+    <circle cx="400" cy="400" r="300"/>
+    <circle cx="400" cy="400" r="304"/>
+    <circle cx="400" cy="400" r="308"/>
+    <circle cx="400" cy="400" r="312"/>
+    <circle cx="400" cy="400" r="316"/>
+    <circle cx="400" cy="400" r="320"/>
+    <circle cx="400" cy="400" r="324"/>
+    <circle cx="400" cy="400" r="328"/>
+    <circle cx="400" cy="400" r="332"/>
+    <circle cx="400" cy="400" r="336"/>
+    <circle cx="400" cy="400" r="340"/>
+    <circle cx="400" cy="400" r="344"/>
+    <circle cx="400" cy="400" r="348"/>
+    <circle cx="400" cy="400" r="352"/>
+    <circle cx="400" cy="400" r="356"/>
+    <circle cx="400" cy="400" r="360"/>
+    <circle cx="400" cy="400" r="364"/>
+    <circle cx="400" cy="400" r="368"/>
+    <circle cx="400" cy="400" r="372"/>
+    <circle cx="400" cy="400" r="376"/>
+    <circle cx="400" cy="400" r="380"/>
+  </g>
+  <circle cx="400" cy="400" r="112" fill="#c8b48a" fill-opacity="0.18"/>
+  <circle cx="400" cy="400" r="112" fill="none" stroke="#e8dcc4" stroke-opacity="0.3" stroke-width="1.2"/>
+  <circle cx="400" cy="400" r="9" fill="#0d0a07" stroke="#e8dcc4" stroke-opacity="0.35" stroke-width="1.2"/>
+  <circle cx="400" cy="400" r="392" fill="url(#sheen)"/>
+  <g clip-path="url(#disc)"><rect width="800" height="800" filter="url(#dust)" opacity="0.5"/></g>
+  <circle cx="400" cy="400" r="392" fill="none" stroke="#e8dcc4" stroke-opacity="0.25" stroke-width="1.5"/>
+</svg>

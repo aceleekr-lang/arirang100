@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="아리랑 100주년">
+  <rect width="64" height="64" rx="12" fill="#14100c"/>
+  <g fill="none" stroke="#e8dcc4" stroke-width="3.4" stroke-linecap="round">
+    <path d="M32 12a20 20 0 0 1 0 40"/>
+    <path d="M32 22a10 10 0 0 1 0 20"/>
+    <path d="M14 12h6v40h-6z" stroke-width="3"/>
+    <path d="M17 18v0M17 26v0M17 34v0M17 42v0M17 47v0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle cx="32" cy="32" r="2.6" fill="#e8dcc4"/>
+</svg>
